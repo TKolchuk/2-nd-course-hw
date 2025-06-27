@@ -10,6 +10,7 @@
             font-weight: 700;
             line-height: 49px;
             text-align: center;
+            padding-top: 147px;
         }
         &__text{
             font-size: 16px;
@@ -22,40 +23,92 @@
             width: 285px;
             font-size: 16px;
             text-align: center;
+            margin-bottom: 131px;
+            margin: auto;
+
         }
         &::after{
-            display: none;
+            content: url(./img/stars_mobile.svg) ;
+            position: absolute;
+            bottom: 79px;
+            right: 34px;
         }
+        &::before{
+            content: url(./img/big-star_mobile.svg);
+            position: absolute;
+            top: -110px;
+            bottom: 248px;
+            left: 37px;
+        }
+
     }
     .about{
+        display: none;
+    }
+    .mini-games{
         &__title{
-            display: none;
-        }
-        &__text{
-            display: none;
-        }
-        &__title-mobile{
-            display: inline;
+            margin-top: 48px;
+            margin-bottom: 48px;
             font-size: 40px;
             font-weight: 700;
             line-height: 49px;
-            padding-top: 48px;
-            margin-bottom: 48px;
-        }
-        &::after{
-            display: none;
         }
         &::before{
             display: none;
         }
+        &::after{
+            display: none;
+        }
     }
-    .card{
-        grid-column: span 12;
+    .right-colum{
+        box-sizing: border-box;
+        padding-top: 29px;
+        padding-left: 29px;
+        padding-right: 29px;
+        padding-bottom: 48px;
+
+        width: 100%;
+
     }
-    .play{
-        max-width: 343px;
+    .big-card{
+        // min-width: 343px;
+        flex-direction: column-reverse;
+        &:nth-child(2n){
+            flex-direction: column-reverse;
+        }
         &__img{
-            max-width: 343px;
+            width: 100%;
+        }
+        &__title{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            // margin-top: 29px;
+            margin-bottom: 16px;
+            // max-width: 343px;
+        }
+        &__text{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 48px;
+            // max-width: 343px;
+        }
+        &__btn{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            padding: 16px 110px;
+            margin: auto;
+        }
+
+    }
+    .footer{
+        height: 100px;
+        &__text{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
         }
     }
 }
