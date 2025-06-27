@@ -1,0 +1,61 @@
+@media(max-width: 767px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .hero-page{
+        height: 700px;
+        &__title{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            text-align: center;
+        }
+        &__text{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+        &__btn{
+            width: 285px;
+            font-size: 16px;
+            text-align: center;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    .about{
+        &__title{
+            display: none;
+        }
+        &__text{
+            display: none;
+        }
+        &__title-mobile{
+            display: inline;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            padding-top: 48px;
+            margin-bottom: 48px;
+        }
+        &::after{
+            display: none;
+        }
+        &::before{
+            display: none;
+        }
+    }
+    .card{
+        grid-column: span 12;
+    }
+    .play{
+        max-width: 343px;
+        &__img{
+            max-width: 343px;
+        }
+    }
+}
