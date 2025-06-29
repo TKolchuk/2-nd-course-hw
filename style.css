@@ -223,10 +223,9 @@ a {
 }
 .big-card__img {
   border-radius: 30px;
-  width: 600px;
 }
 
-.right-colum {
+.right-column {
   padding: 48px;
   width: 600px;
 }
@@ -315,7 +314,7 @@ a {
   .mini-games::after {
     display: none;
   }
-  .right-colum {
+  .right-column {
     box-sizing: border-box;
     padding-top: 29px;
     padding-left: 29px;
