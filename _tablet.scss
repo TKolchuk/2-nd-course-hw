@@ -3,6 +3,43 @@
         padding-left: calc(50% - 786px/2);
         padding-right: calc(50% - 786px/2);
     }
+    .play{
+        &-box{
+            column-gap: 24px;
+            row-gap: 24px;
+        }
+        &__name{
+           font-size: 24px; 
+           line-height: 29px;
+           width: 170px;
+        }
+
+    }
+    .big-card{
+        max-height: 370px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        &:nth-child(2n){
+            flex-direction: row;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 42px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+        &__btn{
+            font-size: 16px;
+        }
+        &__img{
+            width: 70%;
+            grid-column: span 3;
+        }
+    }
+    .right-colum{
+        grid-column: span 3;
+    }
 }
 @media (min-width:768px) and (max-width: 833px){
     .center{
