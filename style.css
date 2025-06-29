@@ -21,6 +21,7 @@ a {
   background-color: #E1FF8F;
   height: 800px;
   position: relative;
+  overflow: hidden;
 }
 .hero-page::before {
   content: url(./img/mini-stars_hero-page.svg);
@@ -74,6 +75,7 @@ a {
 .about {
   color: rgb(255, 255, 255);
   padding-bottom: 50px;
+  overflow: hidden;
   position: relative;
 }
 .about__title {
