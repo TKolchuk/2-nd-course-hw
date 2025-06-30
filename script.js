@@ -16,6 +16,8 @@ function playRandom() {
                 alert("Поздравляю! Вы угадали!!!");
                 break;
             }             
-        }         
+        } else {
+            break;
+        }        
     } while (userNumber !== number);
 }
