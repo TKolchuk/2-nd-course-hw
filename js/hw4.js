@@ -43,7 +43,6 @@
 //5
 // let n = 1000;
 // let num = 0;
-// let res = 0;
 // while(n > 50) {
 //   num++;
 //   n /= 2;
