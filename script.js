@@ -100,4 +100,34 @@ function playQuiz() {
   alert(`Верных ответов: ${counter}`);
 }
 
+function RockPaperScissors() {
+  const choices = ["камень", "ножницы", "бумага"];
 
+  let userChoice = prompt(
+    "Сделайте свой выбор: камень, ножницы или бумага"
+  ).toLowerCase();
+
+  if (!choices.includes(userChoice)) {
+    alert(
+      "Некорректный ввод! Пожалуйста, введите 'камень', 'ножницы' или 'бумага'."
+    );
+  } else {
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+    if (userChoice === computerChoice) {
+      result = "Ничья!";
+    } else if (
+      (userChoice === "камень" && computerChoice === "ножницы") ||
+      (userChoice === "ножницы" && computerChoice === "бумага") ||
+      (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+      result = "Вы победили!";
+    } else {
+      result = "Компьютер победил!";
+    }
+
+    alert(
+      `Ваш выбор: ${userChoice}\nВыбор компьютера: ${computerChoice}\n${result}`
+    );
+  }
+}
