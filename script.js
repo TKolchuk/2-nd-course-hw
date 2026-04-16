@@ -85,17 +85,23 @@ function playQuiz() {
       correctAnswer: 2,
     },
   ];
+  
   let counter = 0;
+  
+  
   for (let i = 0; i < quiz.length; i++) {
-    let userAnswer = Number(
-      prompt(`${quiz[i].question} \n${quiz[i].options} \nВведите номер ответа.`)
-    );
+    const input = prompt(`${quiz[i].question} \n${quiz[i].options} \nВведите номер ответа.`);
+    if (input === null) {
+          break; 
+        }
+    const userAnswer = Number(input);    
     if (userAnswer === quiz[i].correctAnswer) {
       counter++;
       alert("Верно");
     } else {
       alert("Неверно");
-    }
+    } 
+  
   }
   alert(`Верных ответов: ${counter}`);
 }
